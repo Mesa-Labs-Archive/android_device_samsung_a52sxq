@@ -540,6 +540,32 @@
           }
         }
       ]
+    },
+	{
+      "Name": "TopAppUsage",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuacct",
+            "Path": "top-app"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "BackgroundUsage",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuacct",
+            "Path": "."
+          }
+        }
+      ]
     }
   ],
 
@@ -566,27 +592,27 @@
     },
     {
       "Name": "CPUSET_SP_DEFAULT",
-      "Profiles": [ "TimerSlackNormal" ]
+      "Profiles": [ "TimerSlackNormal", "BackgroundUsage" ]
     },
     {
       "Name": "CPUSET_SP_BACKGROUND",
-      "Profiles": [ "HighEnergySaving", "ProcessCapacityLow", "LowIoPriority", "TimerSlackHigh" ]
+      "Profiles": [ "HighEnergySaving", "ProcessCapacityLow", "LowIoPriority", "TimerSlackHigh", "BackgroundUsage" ]
     },
     {
       "Name": "CPUSET_SP_FOREGROUND",
-      "Profiles": [ "HighPerformance", "ProcessCapacityHigh", "HighIoPriority", "TimerSlackNormal" ]
+      "Profiles": [ "HighPerformance", "ProcessCapacityHigh", "HighIoPriority", "TimerSlackNormal", "BackgroundUsage" ]
     },
     {
       "Name": "CPUSET_SP_TOP_APP",
-      "Profiles": [ "MaxPerformance", "ProcessCapacityMax", "MaxIoPriority", "TimerSlackNormal" ]
+      "Profiles": [ "MaxPerformance", "ProcessCapacityMax", "MaxIoPriority", "TimerSlackNormal", "TopAppUsage" ]
     },
     {
       "Name": "CPUSET_SP_SYSTEM",
-      "Profiles": [ "ServiceCapacityLow", "TimerSlackNormal" ]
+      "Profiles": [ "ServiceCapacityLow", "TimerSlackNormal", "BackgroundUsage" ]
     },
     {
       "Name": "CPUSET_SP_RESTRICTED",
-      "Profiles": [ "ServiceCapacityRestricted", "TimerSlackNormal" ]
+      "Profiles": [ "ServiceCapacityRestricted", "TimerSlackNormal", "BackgroundUsage" ]
     }
   ]
 }

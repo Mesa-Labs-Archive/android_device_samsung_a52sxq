@@ -42,12 +42,12 @@ Available at [https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree
 
 This device tree was tested and is fully compatible with [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp).
 
-1. Set up the build environment following the instructions [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-11/README.md#getting-started)
+1. Set up the build environment following the instructions [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-12.1/README.md#getting-started)
 
 2. In the root folder of the fetched repo, clone the device tree:
 
 ```bash
-git clone https://github.com/BlackMesa123/android_device_samsung_a52sxq.git -b android-11 device/samsung/a52sxq
+git clone https://github.com/BlackMesa123/android_device_samsung_a52sxq.git -b android-12.1 device/samsung/a52sxq
 ```
 
 3. To build:
