@@ -1,0 +1,29 @@
+# mount point	fstype		device			device2			flags
+
+/boot		emmc		/dev/block/bootdevice/by-name/boot
+/dtbo		emmc		/dev/block/bootdevice/by-name/dtbo		flags=backup=1;flashimg=1;display="DTBO"
+/recovery	emmc		/dev/block/bootdevice/by-name/recovery		flags=backup=1
+/vendor_boot	emmc		/dev/block/bootdevice/by-name/vendor_boot	flags=backup=1;flashimg=1;display="Vendor Boot"
+
+/system_image	emmc		/dev/block/bootdevice/by-name/system		flags=backup=1;flashimg=1
+/odm_image	emmc		/dev/block/bootdevice/by-name/odm		flags=backup=1;flashimg=1;display="ODM Image"
+/product_image	emmc		/dev/block/bootdevice/by-name/product		flags=backup=1;flashimg=1;display="Product Image"
+/vendor_image	emmc		/dev/block/bootdevice/by-name/vendor		flags=backup=1;flashimg=1
+
+/cache		ext4		/dev/block/bootdevice/by-name/cache
+/efs		ext4		/dev/block/bootdevice/by-name/efs		flags=fsflags=ro;backup=1;display="EFS"
+/sec_efs	ext4		/dev/block/bootdevice/by-name/sec_efs		flags=fsflags=ro;backup=1;display="Sec EFS"
+
+/omr		ext4		/dev/block/bootdevice/by-name/omr		flags=wipeingui;display="OMR"
+/optics		ext4		/dev/block/bootdevice/by-name/optics		flags=wipeingui;display="Optics"
+/prism		ext4		/dev/block/bootdevice/by-name/prism		flags=wipeingui;display="Prism"
+/omr_image	emmc		/dev/block/bootdevice/by-name/omr		flags=backup=1;flashimg=1;display="OMR Image"
+/optics_image	emmc		/dev/block/bootdevice/by-name/optics		flags=backup=1;flashimg=1;display="Optics Image"
+/prism_image	emmc		/dev/block/bootdevice/by-name/prism		flags=backup=1;flashimg=1;display="Prism Image"
+
+/persist	ext4		/dev/block/bootdevice/by-name/persist		flags=fsflags=ro;display="Persist"
+/metadata	ext4		/dev/block/bootdevice/by-name/metadata		flags=display="Metadata"
+
+# Removable partitions
+/external_sd	auto		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=storage;wipeingui;removable
+/usb-otg	auto		/dev/block/sdg1		/dev/block/sdg		flags=storage;wipeingui;removable
