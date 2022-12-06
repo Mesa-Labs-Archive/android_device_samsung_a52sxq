@@ -36,7 +36,7 @@ There are also two different variants for Taiwan (a52sxqzt) and Korea (a52sxqks)
 
 ## Kernel source 
 
-Available at [https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/twrp-12.1](https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/twrp-12.1)
+Available at [https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/sep-13.1/twrp-12.1](https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/sep-13.1/twrp-12.1)
 
 ## How to build
 
@@ -47,7 +47,7 @@ This device tree was tested and is fully compatible with [minimal-manifest-twrp]
 2. In the root folder of the fetched repo, clone the device tree:
 
 ```bash
-git clone https://github.com/BlackMesa123/android_device_samsung_a52sxq.git -b android-12.1 device/samsung/a52sxq
+git clone https://github.com/TeamWin/android_device_samsung_a52sxq.git -b android-12.1 device/samsung/a52sxq
 ```
 
 3. To build:
