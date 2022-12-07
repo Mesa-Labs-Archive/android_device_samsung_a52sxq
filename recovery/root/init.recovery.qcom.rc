@@ -38,3 +38,6 @@ on fs
     # Mount firmware
     mkdir /vendor/firmware_mnt
     mount vfat /dev/block/bootdevice/by-name/apnhlos /vendor/firmware_mnt ro
+
+on boot
+    start health-hal-2-1
