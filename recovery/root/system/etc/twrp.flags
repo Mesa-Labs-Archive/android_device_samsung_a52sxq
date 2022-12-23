@@ -11,8 +11,8 @@
 /vendor_image	emmc		/dev/block/bootdevice/by-name/vendor		flags=backup=1;flashimg=1
 
 /cache		ext4		/dev/block/bootdevice/by-name/cache
-/efs		ext4		/dev/block/bootdevice/by-name/efs		flags=fsflags=ro;backup=1;display="EFS"
-/sec_efs	ext4		/dev/block/bootdevice/by-name/sec_efs		flags=fsflags=ro;backup=1;display="Sec EFS"
+/efs		ext4		/dev/block/bootdevice/by-name/efs		flags=backup=1;display="EFS"
+/sec_efs	ext4		/dev/block/bootdevice/by-name/sec_efs		flags=backup=1;display="Sec EFS"
 
 /omr		ext4		/dev/block/bootdevice/by-name/omr		flags=wipeingui;display="OMR"
 /optics		ext4		/dev/block/bootdevice/by-name/optics		flags=wipeingui;display="Optics"
