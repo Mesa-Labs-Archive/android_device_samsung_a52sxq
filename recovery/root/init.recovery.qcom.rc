@@ -39,5 +39,14 @@ on fs
     mkdir /vendor/firmware_mnt
     mount vfat /dev/block/bootdevice/by-name/apnhlos /vendor/firmware_mnt ro
 
+    start linkblobs
+
 on boot
     start health-hal-2-1
+
+service linkblobs /system/bin/linkblobs.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
