@@ -22,7 +22,6 @@
 /prism_image	emmc		/dev/block/bootdevice/by-name/prism		flags=backup=1;flashimg=1;display="Prism Image"
 
 /persist	ext4		/dev/block/bootdevice/by-name/persist		flags=fsflags=ro;display="Persist"
-/metadata	ext4		/dev/block/bootdevice/by-name/metadata		flags=display="Metadata"
 
 # Removable partitions
 /external_sd	auto		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=storage;wipeingui;removable
