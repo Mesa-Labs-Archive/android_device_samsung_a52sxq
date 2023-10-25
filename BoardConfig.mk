@@ -124,7 +124,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 486
 TW_DEFAULT_BRIGHTNESS := 128
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone50/temp"
 TW_Y_OFFSET := 89
 TW_H_OFFSET := -89
