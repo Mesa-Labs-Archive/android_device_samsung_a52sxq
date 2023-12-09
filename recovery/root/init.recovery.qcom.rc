@@ -27,8 +27,10 @@
 
 import /init.recovery.qcom_decrypt.rc
 
-on init
+on early-init
     start linkblobs
+
+on init
     setprop prepdecrypt.setpatch true
 
 on fs
