@@ -36,7 +36,7 @@ There are also two different variants for Taiwan (a52sxqzt) and Korea (a52sxqks)
 
 ## Kernel source 
 
-Available at [https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/sep-14.1/twrp-12.1](https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/sep-14.1/twrp-12.1)
+Available at [https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/sep-15/twrp-12.1](https://github.com/BlackMesa123/android_kernel_samsung_sm7325/tree/sep-15/twrp-12.1)
 
 ## How to build
 
